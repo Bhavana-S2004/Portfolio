@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('wp2682996.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Fix the background while scrolling */
+    background-position: center;
+    background-color: #121212;
+    color: #fff;
+}
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    background: linear-gradient(90deg, #444, #fff, #444);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+header h2 {
+    color: #fff; /* Solid white for subtitle */
+    margin: 10px 0 0;
+}
+
+
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(26, 26, 26, 0.8);
+    text-align:justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Info Card */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #444;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    margin: 10px 0;
+    font-size: 18px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+/* GIF Container */
+.gif-container {
+    text-align: center;
+}
+
+.gif-container img {
+    width: 300px;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.8);
+    color: #aaa;
+}
+
+.ref{
+    color:rgb(167, 97, 167);
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}

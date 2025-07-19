@@ -1,0 +1,355 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #121212;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('wallpaper.avif'); /* Your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.2; /* Adjust this value to control opacity */
+    z-index: -1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color:  transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  .cen{
+        text-align: center;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  .skills{
+            padding: 20px 10px 20px 40px;
+            line-height: 50x;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #954caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #954caf;
+  }
+  
+header {
+    background-color: #373b37;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #383f46;
+    text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle transparent background */
+}
+
+th, td {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 10px;
+  color: #fff;
+}
+.size{
+    font-size: medium;
+    color: #726f6f;
+}
+.skills {
+  max-width: 700px;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill span {
+  width: 220px;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 10px;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.level {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.beginner {
+  width: 30%;
+  background-color: #df8882;
+}
+
+.intermediate {
+  width: 60%;
+  background-color: #be9b6c;
+}
+
+.proficient {
+  width: 80%;
+  background-color: #7e967e;
+}
+
+.advanced {
+  width: 100%;
+  background-color: #85aac7;
+}
+
+th {
+  background-color: #333;
+}
+.wide-cloumn{
+    width:150px;
+}
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.details {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.details p {
+    margin: 0;
+}
+
+/* Header Section */
+/* Header Section */
+header {
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent black background */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6pxrgba(26, 26, 26, 0.8);
+    position: relative;
+    z-index: 10;
+}
+
+/* Shimmer Effect for Heading Text Only */
+header h1 span {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #444, #fff, #444);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; /* Applies shimmer to text only */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
+    animation: shimmer 3s infinite linear;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Ensure h2 Text Looks Normal */
+header h2 {
+    color: #fff; /* Solid white for subtitle */
+    margin: 10px 0 0;
+}
+
+
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(26, 26, 26, 0.8);
+    text-align:justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Info Card */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #777676;
+    animation: fadeIn 2s ease-in-out;
+}
+.info-card ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.info-card li {
+    margin: 10px 0;
+    font-size: 18px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Button Base */
+.btn {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* On Hover */
+.btn:hover {
+    background-color: #444;
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Animated Footer Message */
+.animated-footer-message {
+  text-align: center;
+  font-size: 18px;
+  color: #f8f9f9;
+  margin-top: 20px;
+  animation: fadeInSlide 3s ease-in-out infinite alternate;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0.6;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.8);
+    color: #aaa;
+}
+
+.ref{
+    color:rgb(167, 97, 167);
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
